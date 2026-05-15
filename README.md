@@ -8,6 +8,16 @@
 
 **项目规模**：11 个专业大类 · 100+ 子方向细分 · 4 个毕业决策窗口（2027–2031+） · 24 个公开数据源 · 16/16 核心数据已逐项核对
 
+### 📲 转发到微信 / 微博
+
+直接复制网址：`https://georgehawkie-hash.github.io/ai-risk-analysis/stem_ai_job_risk_article.html`
+
+页面已配好 og:image / twitter:card 等社交卡片元数据，链接卡片预览会自动渲染下图（1200×630）：
+
+![社交卡片预览](social_card.png)
+
+生成脚本：[`generate_social_card.py`](generate_social_card.py)。如果微信对 GitHub Pages 兼容性不佳，可在浏览器 `Ctrl+P` 转 PDF 后用微信发文件。
+
 ---
 
 ## 全景速看
@@ -218,7 +228,9 @@
 ├── stem_ai_job_risk_article.html   # 完整文章（家长版 · 可直接浏览）
 ├── stem_ai_job_risk_article.md     # Markdown 源文本
 ├── risk_overview.png               # 风险全景图
+├── social_card.png                 # 社交分享卡片（1200×630）
 ├── generate_chart.py               # 全景图生成脚本
+├── generate_social_card.py         # 社交卡片生成脚本
 ├── LICENSE                         # 版权声明（中英双语）
 ├── robots.txt                      # AI 爬虫屏蔽规则
 └── data/

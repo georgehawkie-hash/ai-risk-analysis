@@ -189,19 +189,27 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 18px;
+      min-width: 18px;
       height: 18px;
+      padding: 0 5px;
       border-radius: 999px;
       color: #fff;
       font-size: 11px;
       font-weight: 900;
       line-height: 1;
+      gap: 2px;
     }
+    .risk-dot::before { font-size: 10px; font-weight: 800; }
     .risk-dot.high { background: var(--red); }
+    .risk-dot.high::before { content: "高"; }
     .risk-dot.medium-high { background: var(--orange); color: #382509; }
+    .risk-dot.medium-high::before { content: "中高"; }
     .risk-dot.medium { background: var(--yellow); color: #3d330a; }
+    .risk-dot.medium::before { content: "中"; }
     .risk-dot.low { background: var(--green); }
+    .risk-dot.low::before { content: "低"; }
     .risk-dot.opportunity { background: var(--blue); }
+    .risk-dot.opportunity::before { content: "机会"; }
     .matrix td:not(:first-child) { min-width: 170px; }
     .risk-block { display: grid; gap: 4px; }
     .risk-title {
@@ -405,16 +413,15 @@
       flex-wrap: wrap;
     }
     .risk-counts {
-      display: inline-grid;
-      grid-template-columns: repeat(5, 22px);
-      gap: 8px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 5px;
       align-items: center;
       justify-content: end;
-      min-width: 142px;
       margin-left: auto;
       flex: 0 0 auto;
     }
-    .risk-counts .risk-dot { width: 22px; height: 22px; font-size: 12px; }
+    .risk-counts .risk-dot { height: 22px; font-size: 12px; }
     .subfield-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));

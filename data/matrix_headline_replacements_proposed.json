@@ -1,6 +1,7 @@
 {
   "_copyright": "© 2026 本文作者。保留所有权利。",
   "_license": "All Rights Reserved",
+  "_note": "提议（未全部采纳）的矩阵标题候选稿。文章最终发布版本使用的是 major_risk_database.json 中的 decisionCells.headline。两组标题可能不同，本文件仅作为编辑历史保留。",
   "computer_software_data_ai": {
     "gaokao_2030": {
       "headline": "CRUD 岗位缩编",

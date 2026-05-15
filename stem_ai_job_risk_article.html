@@ -18,126 +18,391 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="2026 理工科 AI 就业风险矩阵">
   <meta name="twitter:description" content="基于任务暴露分析的理工科 AI 就业风险矩阵，覆盖 11 个大类 100+ 子方向，按四个时间窗口评估入口风险。">
-  <title>2026 理工科 AI 就业风险矩阵</title>
+  <title>2026 理工科 AI 就业风险矩阵 · 高考家长版</title>
   <style>
     :root {
-      --ink: #202124;
-      --muted: #5f6368;
-      --line: #d8dee6;
-      --paper: #faf9f5;
+      --ink: #1a1a1a;
+      --ink-2: #2d2d30;
+      --muted: #6a6f76;
+      --line: #e5e7eb;
+      --line-soft: #f0f1f3;
+      --paper: #fafaf8;
       --panel: #ffffff;
-      --red: #d95f5f;
-      --orange: #f2a65a;
-      --yellow: #f2d16b;
-      --green: #67b26f;
-      --blue: #4c78a8;
-      --soft-red: #fff0ef;
-      --soft-orange: #fff6e8;
-      --soft-yellow: #fff9dd;
-      --soft-green: #eef8ef;
-      --soft-blue: #eef4fb;
+      --accent: #1c4e80;
+      --red: #c0392b;
+      --orange: #e67e22;
+      --yellow: #d4a017;
+      --green: #2e7d32;
+      --blue: #1c4e80;
+      --soft-red: #fdecea;
+      --soft-orange: #fdf2e3;
+      --soft-yellow: #fdf6df;
+      --soft-green: #eaf3eb;
+      --soft-blue: #e9f0f7;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
-      line-height: 1.55;
-      letter-spacing: 0;
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    a { color: #245f96; text-underline-offset: 3px; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: #143a60; }
     .page {
-      max-width: 1180px;
+      max-width: 1080px;
       margin: 0 auto;
-      padding: 24px 18px 60px;
+      padding: 28px 20px 80px;
     }
     header {
-      padding: 18px 0 16px;
-      border-bottom: 3px solid var(--ink);
-      margin-bottom: 18px;
+      padding: 36px 0 28px;
+      margin-bottom: 8px;
+      text-align: left;
     }
     .eyebrow {
       display: inline-block;
       font-size: 13px;
       color: var(--muted);
-      border: 1px solid var(--line);
       background: #fff;
-      padding: 4px 10px;
+      padding: 6px 14px;
       border-radius: 999px;
-      margin-bottom: 12px;
+      margin-bottom: 18px;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
     }
     h1 {
       margin: 0;
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.08;
+      font-size: clamp(34px, 5.5vw, 56px);
+      line-height: 1.18;
       letter-spacing: 0;
+      font-weight: 900;
+      color: var(--ink);
     }
     .subtitle {
-      margin: 12px 0 0;
-      font-size: 20px;
-      color: #343941;
-      max-width: 920px;
+      margin: 18px 0 0;
+      font-size: clamp(18px, 2.3vw, 22px);
+      color: var(--ink-2);
+      max-width: 800px;
+      font-weight: 500;
+      line-height: 1.55;
     }
     .thesis {
-      display: inline-block;
-      margin-top: 14px;
-      padding: 8px 12px;
-      border-radius: 8px;
+      display: block;
+      margin-top: 28px;
+      padding: 20px 24px;
+      border-radius: 12px;
       background: #fff;
-      border: 1px solid var(--line);
-      border-left: 7px solid var(--red);
+      border-left: 6px solid var(--red);
       font-weight: 700;
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.6;
+      box-shadow: var(--shadow-md);
+      max-width: 820px;
     }
     section {
-      margin: 20px 0;
+      margin: 32px 0;
       background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
+      border-radius: 14px;
+      padding: 28px 26px;
+      box-shadow: var(--shadow-sm);
     }
+    section.flush { padding: 26px 22px; }
     h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
-      line-height: 1.25;
+      margin: 0 0 18px;
+      font-size: clamp(22px, 3.2vw, 28px);
+      line-height: 1.3;
       letter-spacing: 0;
+      font-weight: 800;
+      color: var(--ink);
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line);
+    }
+    h2 .h2-sub {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: 6px;
+      letter-spacing: 0.02em;
     }
     h3 {
-      margin: 0 0 6px;
-      font-size: 17px;
-      line-height: 1.28;
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.35;
+      font-weight: 800;
+      color: var(--ink);
     }
-    p { margin: 7px 0; }
+    p { margin: 10px 0; }
     .note {
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
+      line-height: 1.6;
     }
-    .matrix-wrap {
-      overflow-x: auto;
-      border: 1px solid var(--line);
-      border-radius: 8px;
+    .tldr {
+      background: linear-gradient(135deg, #fff 0%, #faf7f0 100%);
+      border-left: 6px solid var(--accent);
+      padding: 26px 28px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-md);
+      margin: 28px 0 32px;
+    }
+    .tldr h2 {
+      margin-top: 0;
+      border-bottom: 0;
+      padding-bottom: 4px;
+      font-size: 22px;
+    }
+    .tldr ol {
+      margin: 12px 0 4px;
+      padding-left: 1.4em;
+      counter-reset: tldr;
+      list-style: none;
+    }
+    .tldr li {
+      position: relative;
+      margin: 14px 0;
+      padding-left: 8px;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    .tldr li::before {
+      counter-increment: tldr;
+      content: counter(tldr);
+      position: absolute;
+      left: -30px;
+      top: 2px;
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 22px;
+    }
+    .tldr li b { color: var(--ink); }
+    .tldr-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--line);
+    }
+    .tldr-actions a {
+      padding: 8px 16px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .tldr-actions a.ghost {
       background: #fff;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+    .caveat {
+      background: var(--soft-yellow);
+      border-left: 6px solid var(--yellow);
+      padding: 20px 24px;
+      border-radius: 12px;
+      margin: 24px 0 32px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .caveat strong { display: block; color: #6f4f00; font-size: 16px; margin-bottom: 6px; }
+    .caveat ul { margin: 8px 0 0; padding-left: 22px; }
+    .caveat li { margin: 6px 0; }
+    /* legend block */
+    .legend-block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .legend-tile {
+      padding: 16px 16px 14px;
+      border-radius: 10px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--blue);
+    }
+    .legend-tile.high { border-top-color: var(--red); background: var(--soft-red); }
+    .legend-tile.midhigh { border-top-color: var(--orange); background: var(--soft-orange); }
+    .legend-tile.mid { border-top-color: var(--yellow); background: var(--soft-yellow); }
+    .legend-tile.low { border-top-color: var(--green); background: var(--soft-green); }
+    .legend-tile.opp { border-top-color: var(--blue); background: var(--soft-blue); }
+    .legend-tile .lvl {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .legend-tile.high .lvl { background: var(--red); }
+    .legend-tile.midhigh .lvl { background: var(--orange); color: #fff; }
+    .legend-tile.mid .lvl { background: var(--yellow); color: #4a3a00; }
+    .legend-tile.low .lvl { background: var(--green); }
+    .legend-tile.opp .lvl { background: var(--blue); }
+    .legend-tile .meaning {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+      line-height: 1.45;
+    }
+    .legend-tile .example {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    /* decision path */
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .path-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+    .path-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--accent);
+    }
+    .path-card.window-1::before { background: #c0392b; }
+    .path-card.window-2::before { background: #e67e22; }
+    .path-card.window-3::before { background: #1c4e80; }
+    .path-card.window-4::before { background: #2e7d32; }
+    .path-card h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+    .path-card .when {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .path-card .ask {
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--ink-2);
+      margin-bottom: 12px;
+    }
+    .path-card .signal {
+      background: var(--soft-blue);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #143a60;
+    }
+    .path-card .signal b { color: var(--ink); }
+    /* faq */
+    .faq {
       margin-top: 12px;
     }
+    .faq details {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin: 10px 0;
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq summary {
+      padding: 18px 20px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      list-style: none;
+      position: relative;
+      padding-right: 50px;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "＋";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .faq details[open] summary::after { content: "−"; }
+    .faq .answer {
+      padding: 0 20px 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink-2);
+      border-top: 1px solid var(--line-soft);
+      padding-top: 16px;
+    }
+    .faq .answer p { margin: 8px 0; }
+    .faq .answer strong { color: var(--ink); }
+    .matrix-wrap {
+      overflow-x: auto;
+      border-radius: 12px;
+      background: #fff;
+      margin-top: 18px;
+      box-shadow: var(--shadow-sm);
+      -webkit-overflow-scrolling: touch;
+    }
+    .matrix-hint {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 10px 0 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .matrix-hint::before { content: "←→"; font-weight: 800; color: var(--accent); }
     table {
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      font-size: 14px;
+      font-size: 15px;
     }
     th, td {
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      padding: 9px 10px;
+      border-right: 1px solid var(--line-soft);
+      border-bottom: 1px solid var(--line-soft);
+      padding: 14px 14px;
       vertical-align: middle;
     }
     th:last-child, td:last-child { border-right: 0; }
     tr:last-child td { border-bottom: 0; }
     th {
-      background: #f2f4f7;
+      background: #f6f7f9;
       text-align: left;
       font-weight: 800;
       white-space: nowrap;
+      font-size: 14px;
+      color: var(--ink-2);
+      padding: 14px 14px;
     }
     .matrix th:first-child,
     .matrix td:first-child {
@@ -145,13 +410,25 @@
       left: 0;
       z-index: 2;
       background: #fff;
-      min-width: 230px;
-      max-width: 260px;
+      min-width: 240px;
+      max-width: 270px;
       font-weight: 800;
+      font-size: 15px;
     }
     .matrix th:first-child {
-      background: #f2f4f7;
+      background: #f6f7f9;
       z-index: 3;
+    }
+    .matrix .row-note {
+      display: block;
+      margin-top: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #6f4f00;
+      background: var(--soft-yellow);
+      padding: 4px 8px;
+      border-radius: 4px;
+      line-height: 1.4;
     }
     .en {
       display: block;
@@ -189,55 +466,57 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 18px;
-      height: 18px;
-      padding: 0 5px;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 7px;
       border-radius: 999px;
       color: #fff;
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 900;
       line-height: 1;
-      gap: 2px;
+      gap: 3px;
     }
-    .risk-dot::before { font-size: 10px; font-weight: 800; }
+    .risk-dot::before { font-size: 11px; font-weight: 800; }
     .risk-dot.high { background: var(--red); }
     .risk-dot.high::before { content: "高"; }
-    .risk-dot.medium-high { background: var(--orange); color: #382509; }
+    .risk-dot.medium-high { background: var(--orange); color: #fff; }
     .risk-dot.medium-high::before { content: "中高"; }
-    .risk-dot.medium { background: var(--yellow); color: #3d330a; }
+    .risk-dot.medium { background: var(--yellow); color: #4a3a00; }
     .risk-dot.medium::before { content: "中"; }
     .risk-dot.low { background: var(--green); }
     .risk-dot.low::before { content: "低"; }
     .risk-dot.opportunity { background: var(--blue); }
     .risk-dot.opportunity::before { content: "机会"; }
-    .matrix td:not(:first-child) { min-width: 170px; }
-    .risk-block { display: grid; gap: 4px; }
+    .matrix td:not(:first-child) { min-width: 180px; }
+    .risk-block { display: grid; gap: 6px; }
     .risk-title {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      white-space: nowrap;
+      gap: 8px;
+      flex-wrap: wrap;
       font-weight: 800;
-      line-height: 1.25;
+      font-size: 15px;
+      line-height: 1.35;
     }
     .risk-detail {
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.35;
+      color: var(--ink-2);
+      font-size: 13px;
+      line-height: 1.5;
     }
     .badge {
       display: inline-block;
-      min-width: 36px;
+      min-width: 38px;
       text-align: center;
-      padding: 1px 6px;
+      padding: 3px 9px;
       border-radius: 999px;
       color: #fff;
       font-size: 12px;
       font-weight: 800;
+      letter-spacing: 0.02em;
     }
     .badge.red { background: var(--red); }
-    .badge.orange { background: var(--orange); color: #382509; }
-    .badge.yellow { background: var(--yellow); color: #38300a; }
+    .badge.orange { background: var(--orange); color: #fff; }
+    .badge.yellow { background: var(--yellow); color: #4a3a00; }
     .badge.green { background: var(--green); }
     .badge.blue { background: var(--blue); }
     .risk-high { background: var(--soft-red); }
@@ -248,35 +527,37 @@
     .read-grid, .conclusion-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      margin-top: 12px;
+      gap: 14px;
+      margin-top: 18px;
     }
     .mini {
       border: 1px solid var(--line);
       border-left: 6px solid var(--blue);
-      border-radius: 8px;
-      padding: 12px;
+      border-radius: 12px;
+      padding: 18px 18px 16px;
       background: #fff;
+      box-shadow: var(--shadow-sm);
     }
+    .mini h3 { font-size: 16px; margin-bottom: 8px; }
     .mini.red { border-left-color: var(--red); }
     .mini.orange { border-left-color: var(--orange); }
     .mini.yellow { border-left-color: var(--yellow); }
     .mini.green { border-left-color: var(--green); }
     .mini.blue { border-left-color: var(--blue); }
-    .mini p { margin: 0; color: var(--muted); font-size: 14px; }
+    .mini p { margin: 0; color: var(--ink-2); font-size: 15px; line-height: 1.6; }
     .calibration-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 12px;
+      gap: 14px;
+      margin-top: 18px;
     }
     .signal-card {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 12px;
+      border-radius: 12px;
+      padding: 18px 18px 16px;
       background: #fff;
       border-top: 5px solid var(--blue);
-      min-height: 116px;
+      min-height: 120px;
+      box-shadow: var(--shadow-sm);
     }
     .signal-card.red { border-top-color: var(--red); background: var(--soft-red); }
     .signal-card.orange { border-top-color: var(--orange); background: var(--soft-orange); }
@@ -285,126 +566,144 @@
     .signal-card.blue { border-top-color: var(--blue); background: var(--soft-blue); }
     .signal-card strong {
       display: block;
-      font-size: 15px;
-      margin-bottom: 5px;
-      line-height: 1.25;
+      font-size: 16px;
+      margin-bottom: 8px;
+      line-height: 1.35;
+      color: var(--ink);
     }
     .signal-card p {
       margin: 0;
-      color: #4f565f;
-      font-size: 13px;
-      line-height: 1.45;
+      color: var(--ink-2);
+      font-size: 14px;
+      line-height: 1.6;
     }
     .source-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px;
-      margin-top: 12px;
+      gap: 8px;
+      margin-top: 18px;
     }
     .source-tags span {
-      border: 1px solid var(--line);
       border-radius: 999px;
-      background: #fff;
-      color: var(--muted);
-      padding: 3px 9px;
+      background: var(--line-soft);
+      color: var(--ink-2);
+      padding: 5px 12px;
       font-size: 12px;
       font-weight: 700;
     }
     .external-signals {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
-      margin: 10px 0 14px;
+      gap: 12px;
+      margin: 14px 0 18px;
     }
     .external-signals .mini {
-      padding: 10px;
+      padding: 14px;
       border-left-width: 5px;
     }
-    .external-signals h3 { font-size: 14px; }
-    .external-signals p { font-size: 12px; line-height: 1.4; }
+    .external-signals h3 { font-size: 15px; margin-bottom: 6px; }
+    .external-signals p { font-size: 13px; line-height: 1.55; }
     .evidence {
       display: grid;
       grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
-      gap: 16px;
+      gap: 24px;
       align-items: start;
     }
     .bar-list {
       display: grid;
-      gap: 8px;
-      margin-top: 8px;
+      gap: 12px;
+      margin-top: 14px;
     }
     .bar-row {
       display: grid;
-      grid-template-columns: minmax(150px, 230px) 1fr 48px;
-      gap: 8px;
+      grid-template-columns: minmax(150px, 230px) 1fr 56px;
+      gap: 12px;
       align-items: center;
-      font-size: 13px;
+      font-size: 14px;
     }
-    .bar-label { font-weight: 700; line-height: 1.2; }
+    .bar-label { font-weight: 700; line-height: 1.3; color: var(--ink-2); }
     .track {
-      height: 18px;
-      background: #edf0f3;
-      border: 1px solid #dce2e8;
-      border-radius: 4px;
+      height: 22px;
+      background: var(--line-soft);
+      border-radius: 6px;
       overflow: hidden;
     }
-    .bar { height: 100%; }
+    .bar { height: 100%; transition: width 0.6s ease; }
     .bar.red { background: var(--red); }
     .bar.orange { background: var(--orange); }
     .bar.yellow { background: var(--yellow); }
     .bar.green { background: var(--green); }
-    .value { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .value { color: var(--ink); font-variant-numeric: tabular-nums; font-weight: 800; font-size: 14px; }
     details {
       background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      margin: 18px 0;
+      border-radius: 12px;
+      margin: 16px 0;
+      box-shadow: var(--shadow-sm);
     }
     summary {
       cursor: pointer;
-      padding: 14px 16px;
+      padding: 18px 22px;
       font-weight: 800;
       font-size: 17px;
+      line-height: 1.4;
     }
     .details-inner {
-      border-top: 1px solid var(--line);
-      padding: 16px;
+      border-top: 1px solid var(--line-soft);
+      padding: 20px 22px 22px;
     }
     .method {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-      margin-top: 10px;
+      gap: 12px;
+      margin-top: 14px;
     }
     .method div {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px;
+      border-radius: 10px;
+      padding: 14px;
       font-size: 13px;
-      min-height: 76px;
+      min-height: 88px;
+      background: var(--line-soft);
+      line-height: 1.5;
     }
-    .method strong { display: block; color: var(--blue); margin-bottom: 3px; }
+    .method strong { display: block; color: var(--accent); margin-bottom: 6px; font-size: 14px; }
+    .assumptions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .assumption-card {
+      background: var(--line-soft);
+      padding: 14px 16px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent);
+    }
+    .assumption-card h4 { margin: 0 0 6px; font-size: 14px; color: var(--ink); font-weight: 800; }
+    .assumption-card p { margin: 0; font-size: 13px; line-height: 1.55; color: var(--ink-2); }
     .sources {
       font-size: 14px;
-      color: var(--muted);
+      color: var(--ink-2);
+      line-height: 1.7;
     }
-    .sources li { margin: 6px 0; }
+    .sources li { margin: 8px 0; }
     .copyright {
       background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 14px 16px;
-      margin: 20px 0 0;
-      color: #4f565f;
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin: 32px 0 0;
+      color: var(--ink-2);
       font-size: 13px;
+      line-height: 1.6;
+      box-shadow: var(--shadow-sm);
     }
     .copyright strong {
       display: block;
       color: var(--ink);
       font-size: 15px;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
+      font-weight: 800;
     }
-    .copyright p { margin: 5px 0; }
+    .copyright p { margin: 6px 0; }
     .subfield-panel summary {
       display: flex;
       justify-content: space-between;
@@ -415,24 +714,25 @@
     .risk-counts {
       display: inline-flex;
       flex-wrap: wrap;
-      gap: 5px;
+      gap: 6px;
       align-items: center;
       justify-content: end;
       margin-left: auto;
       flex: 0 0 auto;
     }
-    .risk-counts .risk-dot { height: 22px; font-size: 12px; }
+    .risk-counts .risk-dot { height: 24px; font-size: 13px; }
     .subfield-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
+      gap: 14px;
     }
     .subfield-group-title {
       grid-column: 1 / -1;
-      margin: 8px 0 0;
-      padding-top: 10px;
+      margin: 12px 0 0;
+      padding-top: 12px;
       border-top: 1px solid var(--line);
       color: var(--muted);
+      font-size: 15px;
     }
     .subfield-group-title:first-child {
       margin-top: 0;
@@ -440,11 +740,11 @@
       border-top: 0;
     }
     .subfield-card {
-      border: 1px solid var(--line);
       border-left: 6px solid var(--yellow);
-      border-radius: 8px;
+      border-radius: 12px;
       background: #fff;
-      padding: 13px;
+      padding: 18px;
+      box-shadow: var(--shadow-sm);
     }
     .subfield-card.high { border-left-color: var(--red); }
     .subfield-card.medium-high { border-left-color: var(--orange); }
@@ -454,28 +754,59 @@
     .subfield-head {
       display: flex;
       justify-content: space-between;
-      gap: 10px;
+      gap: 12px;
       align-items: flex-start;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
-    .subfield-head h3 { margin: 0; }
+    .subfield-head h3 { margin: 0; font-size: 16px; }
     .subfield-card .judgment {
       font-weight: 800;
-      margin: 6px 0;
+      margin: 8px 0;
+      font-size: 14px;
+      line-height: 1.55;
     }
     .subfield-card dl {
       display: grid;
-      grid-template-columns: 72px 1fr;
-      gap: 6px 10px;
-      margin: 8px 0 0;
+      grid-template-columns: 76px 1fr;
+      gap: 8px 12px;
+      margin: 10px 0 0;
       font-size: 13px;
+      line-height: 1.55;
     }
     .subfield-card dt {
       color: var(--muted);
       font-weight: 800;
     }
-    .subfield-card dd { margin: 0; }
+    .subfield-card dd { margin: 0; color: var(--ink-2); }
+    /* Smooth nav strip */
+    .nav-strip {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 250, 248, 0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 10px 16px;
+      margin: 0 -20px 12px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .nav-strip a {
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: var(--ink-2);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .nav-strip a:hover { background: var(--line-soft); color: var(--accent); }
     @media (max-width: 900px) {
+      body { font-size: 16px; }
       .read-grid,
       .conclusion-grid,
       .evidence,
@@ -485,31 +816,147 @@
       .subfield-grid {
         grid-template-columns: 1fr;
       }
-      section { padding: 14px; }
+      section { padding: 20px 18px; }
+      .tldr { padding: 20px 18px; }
+      .path-grid { grid-template-columns: 1fr; }
       .bar-row {
         grid-template-columns: 1fr;
-        gap: 4px;
+        gap: 6px;
       }
+      .bar-row .value { justify-self: end; }
+      header { padding: 24px 0 18px; }
+      h2 { font-size: 22px; }
+      .nav-strip { font-size: 12px; }
+    }
+    @media (max-width: 600px) {
+      .page { padding: 16px 14px 60px; }
+      .matrix-wrap { margin: 0 -14px; border-radius: 0; }
+      table { font-size: 14px; }
+      th, td { padding: 12px 10px; }
+      .legend-block { grid-template-columns: 1fr 1fr; }
     }
     @media print {
-      body { background: #fff; }
+      body { background: #fff; font-size: 13px; }
       .page { max-width: none; padding: 14mm; }
-      section, details { break-inside: avoid; }
+      section, details, .tldr { break-inside: avoid; box-shadow: none; }
       a { color: var(--ink); text-decoration: none; }
+      .nav-strip { display: none; }
     }
   </style>
 </head>
 <body>
   <main class="page">
+    <nav class="nav-strip" aria-label="页面导航">
+      <a href="#tldr">速读</a>
+      <a href="#legend">图例</a>
+      <a href="#path">决策路径</a>
+      <a href="#matrix">主矩阵</a>
+      <a href="#calibration">校准信号</a>
+      <a href="#evidence">数据锚点</a>
+      <a href="#subfields">子方向</a>
+      <a href="#faq">家长 FAQ</a>
+      <a href="#method">方法</a>
+      <a href="#sources">数据来源</a>
+    </nav>
+
     <header>
-      <div class="eyebrow">理工科学生版 · 时间场景 × 专业入口 · 更新至 2026-05-12</div>
+      <div class="eyebrow">高考家长版 · 大学生 · 研究生 · 更新至 2026-05-15</div>
       <h1>2026 理工科 AI 就业风险矩阵</h1>
-      <p class="subtitle">高考看 2030，考研看 2029，本科转向看 2027-2028，读博看 2031+。</p>
-      <div class="thesis">AI 不会按专业名淘汰人，它会重排入行路径：只做标准任务的人先被压缩，能承担系统和责任的人更有位置。</div>
+      <p class="subtitle">高考看 2030 年的入门岗位，考研看 2029，本科转向看 2027–2028，读博看 2031 之后。</p>
+      <div class="thesis">AI 不会按专业名淘汰人，它在重排"入行路径"——只做标准任务的人先被压缩，能承担系统和责任的人更有位置。</div>
     </header>
 
+    <aside id="tldr" class="tldr" aria-labelledby="tldr-h">
+      <h2 id="tldr-h">30 秒速读</h2>
+      <ol>
+        <li><b>不要按专业名做判断。</b>判断对象是这个专业的"入门任务"，不是专业本身。一个专业里，<b>不同子方向的风险差距可能是 10 倍</b>。</li>
+        <li><b>红色不是"会失业"，蓝色不是"稳赚"。</b>红色 = 入门任务最先被 AI 渗透；蓝色 = 行业需求扩张，但低端入口仍有风险。</li>
+        <li><b>毕业窗口比专业热度更重要。</b>2026 年大热的专业，要看 2030 年的入门岗位还剩什么——AI 能力还在快速变化。</li>
+        <li><b>"现场+签责"是当前最稳的护城河。</b>实验、设备、电网、临床、施工现场，AI 当前无法独立完成的工作仍然依赖人。</li>
+        <li><b>本工具是参考框架，不是命运预测。</b>核心数据来自美国 Claude 使用情况，中国大陆 2030 校招市场的具体走向需要结合本地信息综合判断。</li>
+      </ol>
+      <div class="tldr-actions">
+        <a href="#path">看四个决策窗口 →</a>
+        <a href="#matrix" class="ghost">直接看主矩阵 →</a>
+        <a href="#faq" class="ghost">看家长 FAQ →</a>
+      </div>
+    </aside>
+
+    <div class="caveat" role="note" aria-label="重要说明">
+      <strong>⚠️ 阅读前请知悉本工具的局限</strong>
+      <ul>
+        <li><b>核心数据来源：</b>Anthropic Economic Index（Claude 美国使用数据）+ O*NET 美国职业任务库。这是当前业界最严谨的"AI 任务暴露度"数据，但<b>它直接反映的是美国市场</b>。映射到大陆校招需要定性外推。</li>
+        <li><b>风险等级是"方向性判断"，不是定量预测。</b>"高/中高/中/低/机会" 表达的是相对压缩力度，不能换算成失业率或薪资降幅。</li>
+        <li><b>时间窗口的 AI 能力假设是隐式的。</b>"2030 年"格基于"届时 AI 能稳定承担当下低端代码/文档任务"这类假设——如果 AI 进展显著放缓或加速，结论会变。</li>
+        <li><b>建议结合本地信息使用：</b>目标高校的就业质量报告、目标行业的校招行情、本地用人单位的反馈。</li>
+      </ul>
+    </div>
+
+    <section id="legend">
+      <h2>风险等级图例 <span class="h2-sub">五个等级 · 对应不同入门压力</span></h2>
+      <p class="note">下表用五个颜色表达"入门任务"的相对压缩强度。请记住：颜色描述的是<b>任务被 AI 渗透的程度</b>，而不是"会失业的概率"。</p>
+      <div class="legend-block">
+        <div class="legend-tile high">
+          <span class="lvl">高</span>
+          <div class="meaning">入门任务高度数字化，已被 AI 明显压缩</div>
+          <div class="example">例如：CRUD 后端、BI 报表、CAD 制图、文献综述、PMO 周报</div>
+        </div>
+        <div class="legend-tile midhigh">
+          <span class="lvl">中高</span>
+          <div class="meaning">大量入门任务可被 AI 加速，但仍需落地能力</div>
+          <div class="example">例如：CAE 仿真、工程造价、QC 检测、需求预测、实验记录</div>
+        </div>
+        <div class="legend-tile mid">
+          <span class="lvl">中</span>
+          <div class="meaning">内部分化大，通用任务暴露但系统/现场更稳</div>
+          <div class="example">例如：数字 IC 设计、结构计算、临床统计、机构设计</div>
+        </div>
+        <div class="legend-tile low">
+          <span class="lvl">低</span>
+          <div class="meaning">物理 / 现场 / 安全 / 法规约束强，直接替代慢</div>
+          <div class="example">例如：高压试验、施工管理、生物样本库、设备运维、计量校准</div>
+        </div>
+        <div class="legend-tile opp">
+          <span class="lvl">机会</span>
+          <div class="meaning">需求可能扩张，但低端演示项目仍有同质化风险</div>
+          <div class="example">例如：电网/储能、人形机器人、自驱实验室、AI4Science、BCI</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="path">
+      <h2>决策路径：你处在哪个窗口？ <span class="h2-sub">不同身份看不同毕业年份</span></h2>
+      <p class="note">这张矩阵不是给所有人看同一个答案。请先定位自己处于哪个时间窗口，再回到主矩阵看对应那列。</p>
+      <div class="path-grid">
+        <div class="path-card window-1">
+          <h3>🎓 高考选专业</h3>
+          <div class="when">现在 = 2026 · 入学 2026 秋 · <b>毕业 2030</b></div>
+          <div class="ask">四年后 AI 能稳定承担多少入门任务？这个专业的"通用入门岗位"届时是否还需要大量新人？</div>
+          <div class="signal"><b>怎么用：</b>看主矩阵第一列"高考"。<b>红色专业</b>不是"不能选"，而是"选了要尽早往系统/现场方向走"。</div>
+        </div>
+        <div class="path-card window-2">
+          <h3>📚 考研</h3>
+          <div class="when">2026/2027 报考 · <b>毕业 2029</b></div>
+          <div class="ask">读研让你进入更高责任链，还是只在已经商品化的任务上加学历？目标导师的平台是否真实？</div>
+          <div class="signal"><b>怎么用：</b>看主矩阵第二列"考研"。重点看"导师有没有设备、数据、产业合作"，<b>专业名不如平台关键</b>。</div>
+        </div>
+        <div class="path-card window-3">
+          <h3>🔁 本科在读转向</h3>
+          <div class="when">大二、大三 · <b>实习/求职 2027–2028</b></div>
+          <div class="ask">实习市场要的是"能用 AI 交付完整项目"的人，不是"会用工具"的人。我的项目能证明系统能力吗？</div>
+          <div class="signal"><b>怎么用：</b>看主矩阵第三列"本科转向"。子方向的"危险入口 vs 更稳能力"是关键判断点。</div>
+        </div>
+        <div class="path-card window-4">
+          <h3>🔬 读博/科研</h3>
+          <div class="when">硕博/科研路线 · <b>就业 2031 之后</b></div>
+          <div class="ask">论文复现和文献综述的稀缺度还会跌。研究路径里有没有独占样本、仪器、数据或工程平台？</div>
+          <div class="signal"><b>怎么用：</b>看主矩阵第四列"读博"。"机会"标签 = 上限高但波动大；要看具体子方向。</div>
+        </div>
+      </div>
+    </section>
+
     <section>
-      <h2>怎么读这张表</h2>
+      <h2>怎么读这张表 <span class="h2-sub">三步判断法</span></h2>
       <div class="read-grid">
         <div class="mini red">
           <h3>1. 先看任务数字化</h3>
@@ -524,18 +971,11 @@
           <p>高考不是看 2026 热度，而是看 2030 的入门岗位还剩什么。</p>
         </div>
       </div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:14px;font-size:14px;font-weight:700;align-items:center">
-        <span style="color:var(--muted)">风险图例：</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span class="badge red">高</span>入口任务高度数字化，已被 AI 明显压缩</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span class="badge orange">中高</span>大量入口任务可被加速，但仍需落地能力</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span class="badge yellow">中</span>内部分化大，通用任务暴露但系统/现场更稳</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span class="badge green">低</span>物理/现场/安全/法规约束强，直接替代慢</span>
-        <span style="display:inline-flex;align-items:center;gap:5px"><span class="badge blue">机会</span>需求可能扩张，但低端演示仍有风险</span>
-      </div>
     </section>
 
-    <section>
-      <h2>主矩阵：时间场景 × 专业入口</h2>
+    <section id="matrix">
+      <h2>主矩阵：时间场景 × 专业入口 <span class="h2-sub">11 大类 × 4 个毕业窗口 · 点"查看子方向"看 100+ 细分</span></h2>
+      <p class="matrix-hint">表格在手机上可左右滑动</p>
       <div class="matrix-wrap">
         <table class="matrix" aria-label="时间场景与专业入口 AI 就业风险矩阵">
           <thead>
@@ -570,7 +1010,7 @@
               <td class="risk-blue"><div class="risk-block"><div class="risk-title"><span class="badge blue">机会</span>架构/工艺/工具链有机会</div><div class="risk-detail">长期机会在系统架构、先进工艺和 EDA。</div></div></td>
             </tr>
             <tr>
-              <td>电气类/能源动力类<span class="en">Electrical / Power & Energy</span><a class="subfield-link" href="#electrical-subfields" title="子方向分布：红=高风险，橙=中高风险，黄=中风险，绿=低风险，蓝=机会"><span>查看子方向</span><span class="summary" aria-label="子方向分布：3个高风险，6个中高风险，5个中风险，5个低风险，3个机会"><span class="risk-dot high" title="高风险 3">3</span><span class="risk-dot medium-high" title="中高风险 6">6</span><span class="risk-dot medium" title="中风险 5">5</span><span class="risk-dot low" title="低风险 5">5</span><span class="risk-dot opportunity" title="机会 3">3</span></span></a></td>
+              <td>电气类/能源动力类<span class="en">Electrical / Power & Energy</span><span class="row-note">⚠️ 主格"低"仅指有签责的现场岗（继保/高压/检测）；22 个子方向里 3 个高 + 6 个中高，电力数字化/储能/碳管理压力大，<b>务必展开看细分</b>。</span><a class="subfield-link" href="#electrical-subfields" title="子方向分布：红=高风险，橙=中高风险，黄=中风险，绿=低风险，蓝=机会"><span>查看子方向</span><span class="summary" aria-label="子方向分布：3个高风险，6个中高风险，5个中风险，5个低风险，3个机会"><span class="risk-dot high" title="高风险 3">3</span><span class="risk-dot medium-high" title="中高风险 6">6</span><span class="risk-dot medium" title="中风险 5">5</span><span class="risk-dot low" title="低风险 5">5</span><span class="risk-dot opportunity" title="机会 3">3</span></span></a></td>
               <td class="risk-low"><div class="risk-block"><div class="risk-title"><span class="badge green">低</span>用电增长托底</div><div class="risk-detail">电气化、储能和算力带来长期工程量。</div></div></td>
               <td class="risk-low"><div class="risk-block"><div class="risk-title"><span class="badge green">低</span>现场安全调试更稳</div><div class="risk-detail">接入电网、保护设备和安全签字不能只靠 AI 完成。</div></div></td>
               <td class="risk-mid"><div class="risk-block"><div class="risk-title"><span class="badge yellow">中</span>计算报告被工具化</div><div class="risk-detail">潮流、方案比较和报告会交给软件。</div></div></td>
@@ -630,9 +1070,9 @@
       </div>
     </section>
 
-    <section>
-      <h2>公开情报校准</h2>
-      <p class="note">我把近年的公开报告、政策、行业项目和一线调查压缩成六个信号。它们不用于预测“某专业消失”，而是用于校准：哪些入门任务正在变薄，哪些能力仍需要真实系统和责任链。</p>
+    <section id="calibration">
+      <h2>公开情报校准 <span class="h2-sub">六个公开信号 · 用来校准矩阵，不预测"专业消失"</span></h2>
+      <p class="note">把近年的公开报告、政策、行业项目和一线调查压缩成六个信号。它们用于校准：哪些入门任务正在变薄，哪些能力仍需要真实系统和责任链。</p>
       <div class="calibration-grid">
         <div class="signal-card red">
           <strong>1. 文字、代码、报表最先被 AI 渗透</strong>
@@ -667,6 +1107,10 @@
         <span>产业：EDA / 机器人 / 药物发现 / 供应链</span>
         <span>职业：BLS / RICS / AIA / Gartner</span>
       </div>
+    </section>
+
+    <section id="subfields" class="flush" style="background:transparent;box-shadow:none;padding:8px 0 0">
+      <h2 style="background:#fff;padding:24px 26px 18px;border-radius:14px;box-shadow:var(--shadow-sm);border-bottom:0;margin-bottom:12px">子方向细分 <span class="h2-sub">11 大类 × 100+ 子方向 · 每个都有"危险入口"和"更稳能力"判断</span></h2>
     </section>
 
     <details id="computer-subfields" class="subfield-panel">
@@ -2383,11 +2827,11 @@
       </div>
     </section>
 
-    <section>
-      <h2>数据锚点</h2>
+    <section id="evidence">
+      <h2>数据锚点：Anthropic observed exposure <span class="h2-sub">官方数据 · 数值越高 = AI 已渗透更多任务</span></h2>
       <div class="evidence">
         <div>
-          <p class="note">这张图不是在预测“多少人会失业”。它说明的是：从 Anthropic 的 AI 使用数据看，哪些职业任务已经更常进入 AI 辅助流程。数值越高，表示这类日常任务越容易被 AI 辅助或自动化。</p>
+          <p class="note">这张图不是在预测"多少人会失业"。它说明的是：从 Anthropic 的 AI 使用数据看，哪些职业任务已经更常进入 AI 辅助流程。数值越高，表示这类日常任务越容易被 AI 辅助或自动化。</p>
           <div class="bar-list" role="img" aria-label="Anthropic observed exposure 各职业 AI 任务暴露度：程序员 0.745，软件测试 0.520，数据科学 0.461，软件开发 0.288，计算机硬件工程 0.145，电气工程 0.059，土木工程 0.008">
             <div class="bar-row" aria-hidden="true">
               <div class="bar-label">程序员/低层编码</div>
@@ -2434,22 +2878,131 @@
       </div>
     </section>
 
-    <details>
-      <summary>展开：方法说明</summary>
-      <div class="details-inner">
-        <p>本文借鉴 Anthropic 的 observed exposure 方法：先看职业任务，再看真实 AI 使用，而不是直接问“AI 会不会替代某专业”。</p>
-        <div class="method">
-          <div><strong>1. 职业任务</strong>用 O*NET 拆解职业任务和时间占比。</div>
-          <div><strong>2. 理论能力</strong>判断 LLM 是否能显著加速任务。</div>
-          <div><strong>3. 真实使用</strong>看 AI 产品的真实使用是否已进入这些任务。</div>
-          <div><strong>4. 自动化权重</strong>自动完成比辅助完成权重更高。</div>
-          <div><strong>5. 职业暴露度</strong>汇总为 observed exposure。</div>
+    <section id="faq">
+      <h2>家长高频问答 <span class="h2-sub">最常被问的 10 个问题</span></h2>
+      <div class="faq">
+        <details>
+          <summary>我孩子要不要选计算机/AI 专业？</summary>
+          <div class="answer">
+            <p><strong>分两步看：</strong>① 计算机的"高风险"指的是<b>低端入口岗位</b>（写 CRUD、改 bug、做报表）会变少，<b>不是整个专业要被淘汰</b>。WEF 2025 报告里软件开发仍在 fastest-growing 名单。</p>
+            <p>② 如果孩子真的对编程有兴趣并能学到系统/底层/算法/安全等深层方向，CS 仍然是高回报路径。如果是"听说热门才选"，那么在 AI 加持下，泛泛会用语法的人很快会被压缩。</p>
+            <p><strong>实操建议：</strong>选 CS，但确保孩子<b>大二之前接触到系统编程或真实项目交付</b>，不要只刷 LeetCode 和做教学项目。</p>
+          </div>
+        </details>
+        <details>
+          <summary>土木现在还能学吗？听说"夕阳行业"了</summary>
+          <div class="answer">
+            <p>本矩阵将土木类整体评为"中"，但<b>内部分化极大</b>：23 个子方向里 7 个"高风险"（建筑方案、BIM 制图、工程造价、报建文本、结构计算等），同时也有 4 个"低风险"和 4 个"机会"（施工管理、桥隧检测、城市更新、水务平台）。</p>
+            <p><strong>关键区分：</strong>地产相关的"设计内业岗"在快速收缩；<b>基础设施运维、城市更新、灾害检测、水务和环境治理</b>有长期需求。建议孩子明确去向是<b>设计院还是工程局/水利局/检测院</b>，再做判断。</p>
+          </div>
+        </details>
+        <details>
+          <summary>"具身智能""脑机科学与技术"这些新专业值得报吗？</summary>
+          <div class="answer">
+            <p>教育部 2026 年本科目录确实新增了这些"交叉学科"门类（具身智能、脑机科学与技术等），9 所高校（HIT、BUAA 等）获批具身智能专业。<b>政策方向真实</b>，但岗位规模和成熟度<b>远未确立</b>。</p>
+            <p><strong>三个判断点：</strong>① 该校有没有真实的机器人/神经科学/临床合作平台？② 培养方案里实验/硬件/临床课时占比多少？③ 毕业后的 2030 校招市场，企业愿意为"具身智能本科生"开多少专门岗位？</p>
+            <p>本矩阵把交叉学科评为"机会-高波动"：上限高，但需要孩子接受不确定性和较高的自学/转向成本。<b>不建议把它当"AI 时代的安全选择"</b>。</p>
+          </div>
+        </details>
+        <details>
+          <summary>"机会"标签是不是就等于推荐？</summary>
+          <div class="answer">
+            <p><strong>不是。</strong>"机会" = <b>行业需求可能扩张</b>（如电网/储能、人形机器人、AI 制药、自驱实验室），但<b>低端入口仍可能被压缩</b>（如调模型做演示、写方案、做大屏）。</p>
+            <p>例如人形机器人本体确实是机会方向，但只会复现论文/做仿真演示的本硕生竞争极其激烈。<b>机会和稳定不是同义词</b>。</p>
+          </div>
+        </details>
+        <details>
+          <summary>我们家是普通家庭，没有资源，应该怎么决策？</summary>
+          <div class="answer">
+            <p><strong>三个不要、三个建议：</strong></p>
+            <p><b>不要：</b>① 不要只听亲戚朋友推荐的"热门专业"，他们的信息往往滞后 5-10 年。② 不要把孩子推向"绝对安全"的专业——AI 在变化，没有专业是绝对安全的。③ 不要赌单一赛道，孩子如果不确定，<b>选基础类 + 工程实践强的方向</b>更稳。</p>
+            <p><b>建议：</b>① 优先看孩子是否有"动手做出系统/作品"的能力倾向，这比专业名更预测就业。② 优先选有<b>真实校企合作或实验平台</b>的学校，而不是名字最炫的专业。③ 让孩子早接触 AI 工具——AI 会用得好的人，几乎在所有专业都比不会用的人有优势。</p>
+          </div>
+        </details>
+        <details>
+          <summary>电气类怎么主矩阵是"低"但有 3 个"高风险"子方向？</summary>
+          <div class="answer">
+            <p>主矩阵的"低"评级是被<b>有签责的现场岗</b>（继保整定、高压试验、电力运维、核电电气）拉低的。但 22 个子方向中：</p>
+            <p><b>3 个高风险</b>：电力数字化/AI for Grid、能源管理/碳管理、氢能/燃料电池——入口任务高度数字化。<br><b>6 个中高</b>：储能/BMS、PLC/SCADA、建筑电气等——方案报告和数字化看板压力大。</p>
+            <p><strong>结论：</strong>电气类整体行业有"用电增长托底"的基本盘，但<b>新人能否进入"低风险"的现场签责岗</b>，取决于学校实习资源和孩子愿不愿意去电厂/变电站/施工现场。请务必点开电气子方向看细分。</p>
+          </div>
+        </details>
+        <details>
+          <summary>女孩子学理工科会不会更难？</summary>
+          <div class="answer">
+            <p>这张矩阵不评价性别就业差异，那是另一个独立问题。但有一个相关观察：本矩阵聚焦"入门任务被压缩"的方向（文档、报告、BI、测试、注册资料等），<b>这些岗位历史上恰好女性占比偏高</b>。Anthropic 2026-03 论文也明确指出，高 AI 暴露职业里女性比例偏高。</p>
+            <p><strong>含义：</strong>对女生而言，<b>越要避免只把自己定位在"会写文档/做报表"的入口</b>，越要主动往系统、实验、现场和决策端走。这和性别本身无关，是任务结构变化的客观影响。</p>
+          </div>
+        </details>
+        <details>
+          <summary>读博还是工作？哪个更受 AI 影响？</summary>
+          <div class="answer">
+            <p>本矩阵把多数专业的"读博"窗口标为"中"或"机会"，原因是：<b>论文复现、综述、数据清洗</b>等低端科研入口被 AI 增强得最快，但<b>真实仪器、独占样本、独占数据、工程平台</b>仍稀缺。</p>
+            <p><strong>判断：</strong>① 如果博士课题主要靠跑代码/复现论文/做综述，价值会快速贬值。② 如果博士课题绑定真实设备/临床数据/产业平台/独占样本，价值仍高。<b>选课题比选导师重要，选平台比选名校重要</b>。</p>
+          </div>
+        </details>
+        <details>
+          <summary>这张表多久会过时？</summary>
+          <div class="answer">
+            <p>本工具基于 2026 年 5 月可获取的公开数据。<b>核心方法（任务暴露 × 时间窗口）的有效期较长</b>（2-3 年），但具体子方向评级可能在以下情况下变化：</p>
+            <p>① AI 能力出现明显跃迁或停滞（METR 时间长度持续 doubling 或停滞）；② 中国大陆校招市场出现明确数据反馈（教育部就业蓝皮书、头部企业校招规模）；③ 出现新的"专业内嵌 AI"工具，导致某个原本"低风险"的方向被实质性压缩（例如 BIM AI 完全替代施工图）。</p>
+            <p><strong>建议：</strong>把这张表当作<b>2026 年的一张快照</b>，不是终身参考。</p>
+          </div>
+        </details>
+        <details>
+          <summary>这份分析来源可靠吗？怎么验证？</summary>
+          <div class="answer">
+            <p>所有 24+ 引用源都标注了 URL，可逐项核查。核心数据有四类：</p>
+            <p><b>A 级（学术/官方）：</b>Anthropic 论文、Stanford Canaries、Microsoft Research、教育部、工信部、国家能源局、BLS、WEF、IFR、IEA。<br><b>B 级（行业调查）：</b>Stack Overflow Survey、DORA、LeadDev、RICS、AIA、Gartner、BCG。<br><b>C 级（产业项目）：</b>Synopsys、Cadence、NIST 自驱实验室、Isomorphic Labs、Ginkgo。</p>
+            <p>本工具还包含两份独立审计文档（<a href="https://github.com/georgehawkie-hash/ai-risk-analysis/blob/master/data/claude_independent_review.md">claude_independent_review.md</a>、<a href="https://github.com/georgehawkie-hash/ai-risk-analysis/blob/master/data/public_ai_impact_review.md">public_ai_impact_review.md</a>），公开承认了方法论局限。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="method">
+      <h2>方法说明 <span class="h2-sub">为什么这样判断 · 隐式假设是什么</span></h2>
+      <p>本文借鉴 Anthropic 的 observed exposure 方法：先看职业任务，再看真实 AI 使用，而不是直接问"AI 会不会替代某专业"。</p>
+      <div class="method">
+        <div><strong>1. 职业任务</strong>用 O*NET 拆解职业任务和时间占比。</div>
+        <div><strong>2. 理论能力</strong>判断 LLM 是否能显著加速任务。</div>
+        <div><strong>3. 真实使用</strong>看 AI 产品的真实使用是否已进入这些任务。</div>
+        <div><strong>4. 自动化权重</strong>自动完成比辅助完成权重更高。</div>
+        <div><strong>5. 职业暴露度</strong>汇总为 observed exposure。</div>
+      </div>
+
+      <h3 style="margin-top:22px">四个时间窗口的隐式 AI 能力假设</h3>
+      <p class="note">为了让读者能自行判断结论是否仍成立，把矩阵每一列背后的能力假设显式列出。<b>如果未来 AI 实际进展与这些假设差距很大，对应列的结论也会偏离。</b></p>
+      <div class="assumptions-grid">
+        <div class="assumption-card">
+          <h4>高考 → 2030</h4>
+          <p>到 2030 年，AI 能稳定承担当下"初级软件工程师 6 个月经验"的常规任务（CRUD、单测、文档、SQL、报表）；复杂系统、生产事故、安全签责仍需要人。</p>
+        </div>
+        <div class="assumption-card">
+          <h4>考研 → 2029</h4>
+          <p>到 2029 年，AI 在文献综述、数据清洗、标准报告写作、论文复现等"研究助理任务"上达到熟练；导师对没有真实数据/设备的硕士论文兴趣下降。</p>
+        </div>
+        <div class="assumption-card">
+          <h4>本科转向 → 2027-28</h4>
+          <p>到 2027-2028 年实习季，企业明显区分"AI 会用 vs. 不会用"的新人，并对"AI+某专业领域"的复合能力定价；纯方案/演示/教程类项目的稀缺度下降。</p>
+        </div>
+        <div class="assumption-card">
+          <h4>读博 → 2031+</h4>
+          <p>到 2031 年后，AI 能完成多步长任务（METR 时间长度突破 16-32 小时可靠区间），低端科研任务大规模商品化；独占样本/仪器/数据/平台成为博士价值的核心。</p>
         </div>
       </div>
-    </details>
 
-    <section>
-      <h2>数据来源</h2>
+      <h3 style="margin-top:22px">已知局限</h3>
+      <ul style="margin:8px 0;padding-left:22px;line-height:1.7;color:var(--ink-2);font-size:15px">
+        <li><b>数据美国化偏差：</b>Anthropic observed exposure 来源于 Claude 美国使用数据 + O*NET 美国职业库。映射大陆校招市场需要定性外推，<b>本文没有定量传导</b>。</li>
+        <li><b>缺乏大陆本地数据：</b>未直接引用大陆校招行情、企业用人需求和地方就业蓝皮书（这些数据获取门槛高）。</li>
+        <li><b>反向机制处理偏保守：</b>"AI 降低成本→需求扩张→需要更多入门岗位"这个机制在矩阵中被列入 counterarguments 但<b>未影响评级</b>。如果该机制在某些行业明显发生（例如 AI 应用爆发让全栈岗位扩张），那些行业的"高风险"评级可能偏悲观。</li>
+        <li><b>政策窗口不确定性：</b>大陆专业目录调整、产业政策、校招规模会影响校招市场，本工具<b>无法预测政策走向</b>。</li>
+      </ul>
+    </section>
+
+    <section id="sources">
+      <h2>数据来源 <span class="h2-sub">24+ 来源 · 可逐项核查</span></h2>
       <ul class="sources">
         <li>教育部，<a href="https://www.moe.gov.cn/srcsite/A08/moe_1034/s3882/202604/t20260427_1434931.html">《普通高等学校本科专业目录（2026年）》</a>，用于大陆本科专业类口径。</li>
         <li>教育部，<a href="https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202604/t20260428_1435016.html">《普通高等学校本科专业目录（2026年）》发布</a>，用于交叉学科门类、新专业和专业动态调整背景。</li>

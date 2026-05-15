@@ -214,8 +214,8 @@
       "url": "https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm",
       "sourceTier": "A",
       "affectedMajors": ["机械", "土木", "建筑"],
-      "taskSignal": "BLS notes CAD and BIM technologies are expected to reduce many drafting roles.",
-      "matrixImplication": "Supports high risk for pure CAD/BIM drawing, modeling and drafting entry tasks."
+      "taskSignal": "BLS projects little or no change in drafter employment 2024-2034, noting that CAD/BIM technologies continue to temper growth by enabling engineers and architects to perform tasks traditionally done by drafters.",
+      "matrixImplication": "Supports elevated risk for pure CAD/BIM drawing, modeling and drafting entry tasks, even as occupation-level employment stays flat."
     },
     {
       "id": "nist_autonomous_materials_labs",

@@ -4,9 +4,9 @@
 
 **核心判断：AI 不会按专业名淘汰人，它会重排入行路径——只做标准任务的人先被压缩，能承担系统和责任的人更有位置。**
 
-## 阅读方式
+## 👉 [在线阅读完整分析](https://georgehawkie-hash.github.io/ai-risk-analysis/stem_ai_job_risk_article.html)
 
-打开 [`stem_ai_job_risk_article.html`](stem_ai_job_risk_article.html) 即可浏览完整文章。无需安装任何依赖，双击即可在浏览器中查看。
+也可以克隆仓库后双击 `stem_ai_job_risk_article.html` 在本地浏览器中查看。
 
 ## 四个时间窗口
 

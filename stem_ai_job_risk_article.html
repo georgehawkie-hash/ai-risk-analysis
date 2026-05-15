@@ -257,51 +257,35 @@
       margin: 28px 0 32px;
       border-top: 4px solid var(--ink);
     }
-    .overview-head {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px 16px;
-      margin-bottom: 4px;
-    }
-    .overview-head h2 {
-      margin: 0;
-      padding-bottom: 0;
-      border-bottom: 0;
-      font-size: 22px;
-    }
-    .overview-head .axis-key {
-      font-size: 12px;
-      color: var(--muted);
-      letter-spacing: 0.04em;
-      font-weight: 700;
-    }
-    .overview-head .axis-key .arrow {
-      color: var(--red);
-      font-weight: 900;
-    }
-    .overview > .note {
-      margin: 0 0 16px;
+    .overview .overview-h2 {
+      margin: 0 0 14px;
     }
     .overview figure {
-      margin: 0;
-      background: var(--paper);
-      padding: 16px 14px 12px;
-      border-radius: 10px;
+      margin: 4px 0 0;
+      padding: 0;
+      border-radius: 12px;
+      overflow: hidden;
     }
     .overview figure img {
       display: block;
+      width: 100%;
       max-width: 100%;
       height: auto;
       margin: 0 auto;
+      border-radius: 12px;
+      background: #fafaf8;
     }
     .overview figcaption {
-      margin-top: 10px;
-      font-size: 12px;
+      margin-top: 14px;
+      font-size: 12.5px;
       color: var(--muted);
       text-align: center;
-      line-height: 1.5;
+      line-height: 1.6;
+    }
+    .overview figcaption a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
     .takeaway {
       margin-top: 20px;
@@ -1087,20 +1071,19 @@
     </header>
 
     <section id="overview" class="overview" aria-labelledby="overview-h">
-      <div class="overview-head">
-        <h2 id="overview-h">全景速看：11 大类 × 入门风险分布</h2>
-        <span class="axis-key">← <span class="arrow">入门压力大</span> &nbsp;·&nbsp; 入门压力小 →</span>
-      </div>
-      <p class="note">每一行 = 一个专业大类内全部子方向按风险等级的占比。<b>红 + 橙占比越大，说明这个大类的入门岗位被 AI 加速得越多</b>；绿 + 蓝占比越大，说明现场、物理、政策约束让替代更慢。</p>
+      <h2 id="overview-h" class="overview-h2">全景速看 <span class="h2-sub">一张图看懂 11 大类的入门风险分化</span></h2>
       <figure>
-        <img src="risk_overview.png" alt="11 个理工大类的子方向风险分布水平堆叠条形图，按高风险加 0.6 倍中高风险的综合得分排序" loading="lazy">
-        <figcaption>排序：高风险% + 中高风险% × 0.6。0.6 权重仅用于呈现排序，不构成定量预测。括号 = 该大类的子方向总数。</figcaption>
+        <img src="risk_overview.png"
+             alt="11 大类理工专业入门岗位 AI 风险分布堆叠条形图。计算机/软件/数据/AI 综合得分 56 最高，电子/微电子/集成电路 综合得分 0 最低。"
+             loading="lazy"
+             width="2200" height="1232">
+        <figcaption>本图基于本工具自身的 11 大类 × 100+ 子方向独立评级数据合成。<a href="#method">查看方法</a> · <a href="https://github.com/georgehawkie-hash/ai-risk-analysis/blob/master/generate_chart.py">查看生成脚本</a></figcaption>
       </figure>
       <div class="takeaway">
         <div class="takeaway-head">三句话总结</div>
         <ol>
-          <li><b>计算机/AI、生物/BME、交叉新工科位居入门风险前三。</b>共同点：入门岗位以代码、文献、演示项目、标准报告为主——这恰好是 AI 当前加速最快的任务类型。</li>
-          <li><b>电子/IC、机械/仪器、电气/能源整体偏右。</b>原因不是行业好，而是入门岗位里有较多需要硬件、试验、现场调试和签字责任的工作，AI 难独立完成。</li>
+          <li><b>计算机/AI、生物/生物医学工程、交叉新工科位居入门风险前三。</b>共同点：入门岗位以代码、文献、演示项目、标准报告为主——这恰好是 AI 当前加速最快的任务类型。</li>
+          <li><b>电子/集成电路、机械/仪器、电气/能源整体偏右。</b>原因不是行业好，而是入门岗位里有较多需要硬件、试验、现场调试和签字责任的工作，AI 难独立完成。</li>
           <li><b>没有"安全专业"。</b>每个大类内部都至少存在 1 个红色子方向。最终决定的不是专业名，而是<b>子方向 + 学校平台 + 项目经历</b>这三个组合。</li>
         </ol>
       </div>

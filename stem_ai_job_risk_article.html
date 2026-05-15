@@ -248,6 +248,87 @@
       font-size: 15px;
       line-height: 1.6;
     }
+    /* overview chart */
+    .overview {
+      background: #fff;
+      border-radius: 14px;
+      padding: 26px 26px 22px;
+      box-shadow: var(--shadow-md);
+      margin: 28px 0 32px;
+      border-top: 4px solid var(--ink);
+    }
+    .overview-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px 16px;
+      margin-bottom: 4px;
+    }
+    .overview-head h2 {
+      margin: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      font-size: 22px;
+    }
+    .overview-head .axis-key {
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      font-weight: 700;
+    }
+    .overview-head .axis-key .arrow {
+      color: var(--red);
+      font-weight: 900;
+    }
+    .overview > .note {
+      margin: 0 0 16px;
+    }
+    .overview figure {
+      margin: 0;
+      background: var(--paper);
+      padding: 16px 14px 12px;
+      border-radius: 10px;
+    }
+    .overview figure img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+    .overview figcaption {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+    .takeaway {
+      margin-top: 20px;
+      padding: 18px 22px 16px;
+      background: var(--soft-yellow);
+      border-radius: 10px;
+      border-left: 4px solid var(--yellow);
+    }
+    .takeaway-head {
+      font-weight: 800;
+      color: #5a4500;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .takeaway ol {
+      margin: 0;
+      padding-left: 22px;
+      line-height: 1.65;
+    }
+    .takeaway li {
+      margin: 8px 0;
+      font-size: 15px;
+      color: var(--ink-2);
+    }
+    .takeaway li b { color: var(--ink); }
     .tldr {
       background: linear-gradient(135deg, #fff 0%, #faf7f0 100%);
       border-left: 6px solid var(--accent);
@@ -605,16 +686,21 @@
     .risk-dot.opportunity { background: var(--blue); }
     .risk-dot.opportunity::before { content: "机会"; }
     .matrix td:not(:first-child) { min-width: 180px; }
-    .risk-block { display: grid; gap: 6px; }
-    .risk-title {
-      display: inline-flex;
-      align-items: center;
+    .risk-block {
+      display: grid;
       gap: 8px;
-      flex-wrap: wrap;
+      grid-template-rows: auto auto 1fr;
+    }
+    .risk-title {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 8px;
+      align-items: start;
       font-weight: 800;
       font-size: 15px;
       line-height: 1.35;
     }
+    .risk-title .badge { align-self: start; margin-top: 1px; }
     .risk-detail {
       color: var(--ink-2);
       font-size: 13px;
@@ -964,6 +1050,7 @@
 <body>
   <main class="page">
     <nav class="nav-strip" aria-label="页面导航">
+      <a href="#overview">全景图</a>
       <a href="#tldr">速读</a>
       <a href="#legend">图例</a>
       <a href="#path">决策路径</a>
@@ -998,6 +1085,26 @@
       </div>
       <div class="thesis"><b>AI 不会按专业名淘汰人，它在重排"入行路径"。</b><br>只做标准任务的人先被压缩，能承担系统和责任的人更有位置。</div>
     </header>
+
+    <section id="overview" class="overview" aria-labelledby="overview-h">
+      <div class="overview-head">
+        <h2 id="overview-h">全景速看：11 大类 × 入门风险分布</h2>
+        <span class="axis-key">← <span class="arrow">入门压力大</span> &nbsp;·&nbsp; 入门压力小 →</span>
+      </div>
+      <p class="note">每一行 = 一个专业大类内全部子方向按风险等级的占比。<b>红 + 橙占比越大，说明这个大类的入门岗位被 AI 加速得越多</b>；绿 + 蓝占比越大，说明现场、物理、政策约束让替代更慢。</p>
+      <figure>
+        <img src="risk_overview.png" alt="11 个理工大类的子方向风险分布水平堆叠条形图，按高风险加 0.6 倍中高风险的综合得分排序" loading="lazy">
+        <figcaption>排序：高风险% + 中高风险% × 0.6。0.6 权重仅用于呈现排序，不构成定量预测。括号 = 该大类的子方向总数。</figcaption>
+      </figure>
+      <div class="takeaway">
+        <div class="takeaway-head">三句话总结</div>
+        <ol>
+          <li><b>计算机/AI、生物/BME、交叉新工科位居入门风险前三。</b>共同点：入门岗位以代码、文献、演示项目、标准报告为主——这恰好是 AI 当前加速最快的任务类型。</li>
+          <li><b>电子/IC、机械/仪器、电气/能源整体偏右。</b>原因不是行业好，而是入门岗位里有较多需要硬件、试验、现场调试和签字责任的工作，AI 难独立完成。</li>
+          <li><b>没有"安全专业"。</b>每个大类内部都至少存在 1 个红色子方向。最终决定的不是专业名，而是<b>子方向 + 学校平台 + 项目经历</b>这三个组合。</li>
+        </ol>
+      </div>
+    </section>
 
     <aside id="tldr" class="tldr" aria-labelledby="tldr-h">
       <h2 id="tldr-h">30 秒读懂这张矩阵</h2>

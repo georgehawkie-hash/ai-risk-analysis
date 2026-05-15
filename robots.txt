@@ -1,0 +1,52 @@
+# 2026 理工科 AI 就业风险矩阵 — 版权保护
+# © 2026 本文作者。保留所有权利。
+
+# Block AI training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# Block common scraper bots
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+# Allow regular search engines to index (for discoverability)
+User-agent: Googlebot
+Allow: /stem_ai_job_risk_article.html
+Disallow: /data/
+
+User-agent: Bingbot
+Allow: /stem_ai_job_risk_article.html
+Disallow: /data/
+
+User-agent: *
+Disallow: /data/

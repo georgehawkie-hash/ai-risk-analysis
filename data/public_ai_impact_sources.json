@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "copyright": "© 2026 本文作者。保留所有权利。",
+    "license": "All Rights Reserved",
+    "title": "Public AI impact source corpus for STEM entry-risk matrix",
+    "updated": "2026-05-15",
+    "purpose": "Record public reports, policies, industry projects, professional surveys and startup signals used to calibrate the public-facing STEM AI job-risk matrix.",
+    "interpretation": "Sources are mapped to entry-level tasks and decision signals. They are not treated as direct predictions of unemployment or major disappearance."
+  },
+  "sources": [
+    {
+      "id": "anthropic_observed_exposure_2026",
+      "type": "report",
+      "date": "2026-03-05",
+      "title": "Labor market impacts of AI: A new measure and early evidence",
+      "url": "https://www.anthropic.com/research/labor-market-impacts",
+      "sourceTier": "A",
+      "affectedMajors": ["计算机", "数据科学", "数学统计", "材料化学", "工业工程", "工程类整体"],
+      "taskSignal": "Observed exposure shows high coverage for programmers, software QA, data scientists, operations research analysts and other digital task occupations.",
+      "matrixImplication": "Use observed AI task coverage as the main anchor for red/orange cells involving code, testing, BI, modeling, reports and document work."
+    },
+    {
+      "id": "microsoft_occupational_implications_2025",
+      "type": "report",
+      "date": "2025-07",
+      "title": "Working with AI: Measuring the Occupational Implications of Generative AI",
+      "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+      "sourceTier": "A",
+      "affectedMajors": ["计算机", "数据科学", "数学统计", "工业工程", "所有文档型入口"],
+      "taskSignal": "Real Copilot conversations concentrate on information gathering, writing, teaching, advising and other text-heavy tasks; this indicates AI assistance entering workflows, not direct job replacement.",
+      "matrixImplication": "Supports higher risk for writing, reporting, documentation, analysis and low-context advisory entry tasks."
+    },
+    {
+      "id": "stanford_canaries_2025",
+      "type": "academic_report",
+      "date": "2025-11",
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "url": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/",
+      "sourceTier": "A",
+      "affectedMajors": ["计算机", "数据科学", "年轻毕业生入口"],
+      "taskSignal": "Early-career workers in highly AI-exposed occupations show early employment pressure relative to older workers.",
+      "matrixImplication": "Strengthens the page's focus on beginner tasks rather than senior professional survival."
+    },
+    {
+      "id": "metr_time_horizons_2026",
+      "type": "capability_report",
+      "date": "2026-05",
+      "title": "Task-Completion Time Horizons of Frontier AI Models",
+      "url": "https://metr.org/time-horizons/",
+      "sourceTier": "A",
+      "affectedMajors": ["计算机", "科研路线", "交叉学科", "AI应用"],
+      "taskSignal": "Frontier agents are improving on longer digital tasks, while reliability and full responsibility remain bottlenecks.",
+      "matrixImplication": "Supports rising pressure on longer digital projects, but keeps hardware, field, clinical and safety chains as separate constraints."
+    },
+    {
+      "id": "wef_future_jobs_2025",
+      "type": "report",
+      "date": "2025-01-08",
+      "title": "The Future of Jobs Report 2025",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+      "sourceTier": "A",
+      "affectedMajors": ["计算机", "电气能源", "工业工程", "交叉学科"],
+      "taskSignal": "AI, big data, cybersecurity, energy generation/storage/distribution and green transition roles are expected to grow, while skill disruption is broad.",
+      "matrixImplication": "Marks AI/data/energy as opportunity areas only when paired with high-threshold systems and real implementation."
+    },
+    {
+      "id": "stackoverflow_dev_survey_2025",
+      "type": "professional_survey",
+      "date": "2025",
+      "title": "2025 Stack Overflow Developer Survey: AI",
+      "url": "https://survey.stackoverflow.co/2025/ai",
+      "sourceTier": "B",
+      "affectedMajors": ["计算机", "软件工程", "AI应用"],
+      "taskSignal": "AI tool usage by professional developers is widespread, but trust and verification remain major concerns.",
+      "matrixImplication": "Supports the shift from routine implementation skill premiums toward review, reliability, testing and system ownership."
+    },
+    {
+      "id": "dora_ai_assisted_software_2025",
+      "type": "professional_survey",
+      "date": "2025",
+      "title": "State of AI-assisted Software Development",
+      "url": "https://dora.dev/dora-report-2025",
+      "sourceTier": "B",
+      "affectedMajors": ["计算机", "软件工程", "平台工程"],
+      "taskSignal": "AI amplifies existing engineering strengths and weaknesses rather than automatically improving every team.",
+      "matrixImplication": "Supports higher value for platform, delivery process, observability and feedback loops."
+    },
+    {
+      "id": "leaddev_ai_impact_2025",
+      "type": "professional_sentiment",
+      "date": "2025",
+      "title": "The LeadDev AI Impact Report 2025",
+      "url": "https://leaddev.com/wp-content/uploads/2025/08/THE-AI-IMPACT-REPORT-2025-download__LDMO__.pdf",
+      "sourceTier": "B",
+      "affectedMajors": ["计算机", "软件工程", "初级开发"],
+      "taskSignal": "Engineering leaders report uncertainty around junior developer hiring and routine coding tasks.",
+      "matrixImplication": "Supports the high-risk rating for generic business development and testing entry routes."
+    },
+    {
+      "id": "moe_major_catalog_2026",
+      "type": "policy",
+      "date": "2026-04",
+      "title": "普通高等学校本科专业目录（2026年）",
+      "url": "https://www.moe.gov.cn/srcsite/A08/moe_1034/s3882/202604/t20260427_1434931.html",
+      "sourceTier": "A",
+      "affectedMajors": ["交叉学科", "新工科", "具身智能", "脑机科学与技术"],
+      "taskSignal": "Mainland undergraduate catalog adds an interdisciplinary category and new majors such as embodied intelligence and brain-computer science and technology.",
+      "matrixImplication": "Supports treating new engineering as policy-supported but high-variance rather than automatically safe."
+    },
+    {
+      "id": "china_ai_plus_2025",
+      "type": "policy",
+      "date": "2025-08",
+      "title": "国务院关于深入实施“人工智能+”行动的意见",
+      "url": "https://www.gov.cn/zhengce/content/202508/content_7037861.htm",
+      "sourceTier": "A",
+      "affectedMajors": ["交叉学科", "工业工程", "材料化学", "生物", "智能制造", "医疗AI"],
+      "taskSignal": "Policy pushes AI into science, industry, healthcare, governance and other scenarios, while emphasizing application landing and infrastructure.",
+      "matrixImplication": "Supports opportunity labels only where AI connects to real industrial, scientific, medical or public-service platforms."
+    },
+    {
+      "id": "miit_humanoid_robot_2023",
+      "type": "policy",
+      "date": "2023-11",
+      "title": "人形机器人创新发展指导意见",
+      "url": "https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2023/art_50316f76a9b1454b898c7bb2a5846b79.html",
+      "sourceTier": "A",
+      "affectedMajors": ["自动化", "机械", "交叉学科"],
+      "taskSignal": "Policy targets humanoid robot innovation systems and reliable industrial chains.",
+      "matrixImplication": "Supports opportunity labels for robot body, force control and systems integration, but not for pure simulation demos."
+    },
+    {
+      "id": "miit_bci_2025",
+      "type": "policy",
+      "date": "2025",
+      "title": "关于推动脑机接口产业创新发展的实施意见",
+      "url": "https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2025/art_438e059801414869abc50abdb06eeac6.html",
+      "sourceTier": "A",
+      "affectedMajors": ["生物医学工程", "交叉学科", "电子信息"],
+      "taskSignal": "BCI policy emphasizes technology, industry, standard systems, clinical and ethical constraints.",
+      "matrixImplication": "Supports opportunity status for BCI while keeping entry risk high unless tied to hardware, clinical validation and regulation."
+    },
+    {
+      "id": "miit_smart_manufacturing_2024",
+      "type": "policy",
+      "date": "2024",
+      "title": "智能制造典型场景参考指引（2024年版）",
+      "url": "https://www.miit.gov.cn/jgsj/zbys/gzdt/art/2024/art_f43bb0c9bdeb459bad94840c64d3bbdd.html",
+      "sourceTier": "A",
+      "affectedMajors": ["自动化", "机械", "工业工程", "交叉学科"],
+      "taskSignal": "Smart manufacturing scenarios emphasize equipment, industrial software, system integration and full lifecycle value.",
+      "matrixImplication": "Moves manufacturing-related opportunity from generic demos toward equipment, system integration and factory implementation."
+    },
+    {
+      "id": "ifr_world_robotics_2025",
+      "type": "industry_report",
+      "date": "2025-09",
+      "title": "World Robotics 2025 Industrial Robots",
+      "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+      "sourceTier": "A",
+      "affectedMajors": ["自动化", "机械", "智能制造", "工业工程"],
+      "taskSignal": "IFR reports 542,000 industrial robot installations globally in 2024, with China representing 54% of global deployments.",
+      "matrixImplication": "Supports real demand for automation while distinguishing real deployment from algorithm/demo oversupply."
+    },
+    {
+      "id": "synopsys_dso_ai",
+      "type": "industry_project",
+      "date": "2026",
+      "title": "Synopsys DSO.ai and AI-powered EDA",
+      "url": "https://www.synopsys.com/ai/ai-powered-eda/dso-ai.html",
+      "sourceTier": "B",
+      "affectedMajors": ["集成电路", "电子信息", "EDA", "交叉学科"],
+      "taskSignal": "AI-driven design space optimization and EDA flows are moving into production chip design workflows.",
+      "matrixImplication": "Supports compression of scripting/flow tasks and opportunity for EDA/toolchain engineers."
+    },
+    {
+      "id": "cadence_cerebrus_ai_2025",
+      "type": "industry_project",
+      "date": "2025",
+      "title": "Cadence Cerebrus AI Studio",
+      "url": "https://community.cadence.com/cadence_blogs_8/b/corporate-news/posts/transforming-chip-design-with-agentic-ai-introducing-cadence-cerebrus-ai-studio",
+      "sourceTier": "B",
+      "affectedMajors": ["集成电路", "电子信息", "EDA"],
+      "taskSignal": "Agentic AI is being positioned for chip design optimization and production design support.",
+      "matrixImplication": "Supports the IC split between routine flow automation and high-threshold architecture, verification and toolchain work."
+    },
+    {
+      "id": "rics_ai_construction_2025",
+      "type": "professional_survey",
+      "date": "2025",
+      "title": "Artificial intelligence in construction report",
+      "url": "https://www.rics.org/news-insights/artificial-intelligence-in-construction-report",
+      "sourceTier": "B",
+      "affectedMajors": ["土木", "建筑", "测绘", "造价", "环境"],
+      "taskSignal": "Built-environment professionals see AI potential in reports, defect recognition and valuation modeling, but adoption requires standards and responsibility.",
+      "matrixImplication": "Supports high exposure for reports and model outputs, while preserving field inspection and professional liability as constraints."
+    },
+    {
+      "id": "aia_ai_architecture_2025",
+      "type": "professional_survey",
+      "date": "2025-03",
+      "title": "Artificial Intelligence Adoption in Architecture Firms",
+      "url": "https://www.aia.org/about-aia/press/new-research-explores-perceptions-and-opportunities-artificial-intelligence",
+      "sourceTier": "B",
+      "affectedMajors": ["建筑", "土木", "设计"],
+      "taskSignal": "AI adoption in architecture is early but rising, with concern about health, safety and welfare responsibilities.",
+      "matrixImplication": "Supports risk for visualization/text entry but keeps professional responsibility and real project constraints central."
+    },
+    {
+      "id": "bls_drafters_2025",
+      "type": "occupational_data",
+      "date": "2025",
+      "title": "Drafters: Occupational Outlook Handbook",
+      "url": "https://www.bls.gov/ooh/architecture-and-engineering/drafters.htm",
+      "sourceTier": "A",
+      "affectedMajors": ["机械", "土木", "建筑"],
+      "taskSignal": "BLS notes CAD and BIM technologies are expected to reduce many drafting roles.",
+      "matrixImplication": "Supports high risk for pure CAD/BIM drawing, modeling and drafting entry tasks."
+    },
+    {
+      "id": "nist_autonomous_materials_labs",
+      "type": "research_program",
+      "date": "2025",
+      "title": "Autonomous Systems for Materials Research and Metrology",
+      "url": "https://www.nist.gov/programs-projects/autonomous-systems-materials-research-and-metrology-accelerating-discovery-and",
+      "sourceTier": "A",
+      "affectedMajors": ["材料", "化学", "AI for Science"],
+      "taskSignal": "Autonomous laboratories combine AI, robotics, metrology and materials characterization.",
+      "matrixImplication": "Supports opportunity for experimental platform integration rather than low-end computational screening alone."
+    },
+    {
+      "id": "isomorphic_drug_design_engine_2026",
+      "type": "startup_project",
+      "date": "2026",
+      "title": "Isomorphic Labs Drug Design Engine",
+      "url": "https://www.isomorphiclabs.com/articles/the-isomorphic-labs-drug-design-engine-unlocks-a-new-frontier",
+      "sourceTier": "B",
+      "affectedMajors": ["生物", "生物医学工程", "化学", "AI for Science"],
+      "taskSignal": "AI drug design is advancing through pharma partnerships and computational drug design engines, but must bridge to real validation.",
+      "matrixImplication": "Supports opportunity for AI drug discovery only when connected to assay, ADMET, clinical and experimental validation."
+    },
+    {
+      "id": "ginkgo_datapoints_2025",
+      "type": "startup_project",
+      "date": "2025",
+      "title": "Ginkgo Datapoints and biofoundry AI data",
+      "url": "https://datapoints.ginkgo.bio/summit2025",
+      "sourceTier": "B",
+      "affectedMajors": ["生物工程", "合成生物学", "实验自动化"],
+      "taskSignal": "Biofoundry and automation platforms aim to generate AI-ready biological data at scale.",
+      "matrixImplication": "Supports opportunity for bio platform operations and data governance, not generic public-data bioinformatics."
+    },
+    {
+      "id": "gartner_agentic_supply_chain_2025",
+      "type": "industry_forecast",
+      "date": "2025-05",
+      "title": "Half of Supply Chain Management Solutions Will Include Agentic AI Capabilities by 2030",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2025-05-21-gartner-predicts-half-of-supply-chain-management-solutions-will-include-agentic-ai-capabilities-by-2030",
+      "sourceTier": "B",
+      "affectedMajors": ["工业工程", "物流工程", "管理科学"],
+      "taskSignal": "Agentic AI is expected to automate complex tasks across supply chain planning and execution.",
+      "matrixImplication": "Supports high risk for plans, RFQ, procurement, reports and forecast workflows, while emphasizing system and exception handling."
+    },
+    {
+      "id": "bcg_agentic_logistics_2025",
+      "type": "industry_report",
+      "date": "2025-09",
+      "title": "Agentic AI in Logistics: A Strategic Imperative",
+      "url": "https://www.bcg.com/publications/2025/ai-in-logistics-a-strategic-imperative",
+      "sourceTier": "B",
+      "affectedMajors": ["物流工程", "供应链", "工业工程"],
+      "taskSignal": "GenAI and agentic systems are being applied to logistics productivity, customer response and data-driven decisions.",
+      "matrixImplication": "Supports compression of logistics coordination and reporting, with resilience in real operations and exception handling."
+    }
+  ]
+}

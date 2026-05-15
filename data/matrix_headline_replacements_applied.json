@@ -1,0 +1,202 @@
+{
+  "_copyright": "© 2026 本文作者。保留所有权利。",
+  "_license": "All Rights Reserved",
+  "computer_software_data_ai": {
+    "gaokao_2030": {
+      "headline": "CRUD 岗位缩编",
+      "detail": "模板代码、测试和接口粘合更少留给新人。"
+    },
+    "grad_exam_2029": {
+      "headline": "业务开发学历溢价降",
+      "detail": "只读研再写业务代码，竞争力变薄。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "实习要能交付系统",
+      "detail": "会用 AI 做完整项目的人更占优。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "博士需做平台难题",
+      "detail": "价值来自系统、数据、评测和研究平台。"
+    }
+  },
+  "math_statistics_physics": {
+    "gaokao_2030": {
+      "headline": "推导/报告被自动化",
+      "detail": "解题、代码和解释文字会被快速增强。"
+    },
+    "grad_exam_2029": {
+      "headline": "纯模型难换岗位",
+      "detail": "没有业务或实验数据，模型能力难落地。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "转向要接真实数据",
+      "detail": "实习需落到金融、制造、能源等系统。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "实验/数据决定上限",
+      "detail": "有仪器、样本或独占数据更稳。"
+    }
+  },
+  "electronic_information_microelectronics_ic": {
+    "gaokao_2030": {
+      "headline": "脚本入口先收缩",
+      "detail": "RTL、仿真、测试文档更少留给新人。"
+    },
+    "grad_exam_2029": {
+      "headline": "系统/工艺拉开差距",
+      "detail": "验证、模拟、器件和量产经验更值钱。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "仿真文档最易压缩",
+      "detail": "只会跑脚本和写测试说明，入口变窄。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "架构/工艺/工具链有机会",
+      "detail": "长期机会在系统架构、先进工艺和 EDA。"
+    }
+  },
+  "electrical_energy_power": {
+    "gaokao_2030": {
+      "headline": "用电增长托底",
+      "detail": "电气化、储能和算力带来长期工程量。"
+    },
+    "grad_exam_2029": {
+      "headline": "并网/继保抗替代",
+      "detail": "安全标准、现场调试和审签责任更强。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "计算报告被工具化",
+      "detail": "潮流、方案比较和报告会交给软件。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "电网/储能长期扩张",
+      "detail": "机会在新型电力系统和电力电子。"
+    }
+  },
+  "automation_robotics_intelligent_manufacturing": {
+    "gaokao_2030": {
+      "headline": "仿真 Demo 不够",
+      "detail": "要落到传感器、执行器和稳定运行。"
+    },
+    "grad_exam_2029": {
+      "headline": "控制要接真实设备",
+      "detail": "算法必须通过现场闭环和安全验证。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "只会算法难突围",
+      "detail": "产线集成、调试和工艺理解更稀缺。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "机器人落地加速",
+      "detail": "机会在工业自动化、边缘 AI 和运控。"
+    }
+  },
+  "mechanical_instrumentation_manufacturing": {
+    "gaokao_2030": {
+      "headline": "样机测试护城河",
+      "detail": "加工、装配、测量和故障复盘仍需现场。"
+    },
+    "grad_exam_2029": {
+      "headline": "CAE 报告被提效",
+      "detail": "建模、网格、前处理和摘要更自动化。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "只会制图被压缩",
+      "detail": "要懂制造、测量、装配和质量。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "设备自动化放大",
+      "detail": "机会在工艺、机器人和质量闭环。"
+    }
+  },
+  "civil_architecture_water_geo_transport_environment": {
+    "gaokao_2030": {
+      "headline": "施工签责延缓替代",
+      "detail": "现场、监测和审签责任替代较慢。"
+    },
+    "grad_exam_2029": {
+      "headline": "BIM/GIS 成基础项",
+      "detail": "软件会普及，项目判断和协调更重要。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "绘图算量被压缩",
+      "detail": "低端图纸、算量和规范检索减少。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "存量维护更稳",
+      "detail": "交通、水务和环境治理有长期需求。"
+    }
+  },
+  "materials_chemistry_chemical_pharma": {
+    "gaokao_2030": {
+      "headline": "文献图表先贬值",
+      "detail": "综述、谱图整理和常规图表会自动化。"
+    },
+    "grad_exam_2029": {
+      "headline": "放大/良率定价值",
+      "detail": "配方不够，工艺窗口和质量更关键。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "记录整理被压缩",
+      "detail": "实验记录、综述和常规表征更自动化。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "高通量平台有机会",
+      "detail": "机会在自动实验、表征和计算材料。"
+    }
+  },
+  "biology_bioengineering_biomedical": {
+    "gaokao_2030": {
+      "headline": "组学分析被增强",
+      "detail": "样本质量、实验设计和临床解释更关键。"
+    },
+    "grad_exam_2029": {
+      "headline": "仪器/临床更抗替代",
+      "detail": "靠近器械、医院流程和合规更稳。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "重复实验助理缩编",
+      "detail": "记录、整理和基础分析更少留给新人。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "样本/平台定上限",
+      "detail": "长期价值在样本、平台、合规和跨学科。"
+    }
+  },
+  "industrial_engineering_management_science_logistics": {
+    "gaokao_2030": {
+      "headline": "排产报表自动化",
+      "detail": "库存、流程和经营分析会被 AI 加速。"
+    },
+    "grad_exam_2029": {
+      "headline": "模型要改组织流程",
+      "detail": "只会优化不够，要推动流程落地。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "低端数据岗压缩",
+      "detail": "报表分析和流程总结会减少。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "复杂约束仍稀缺",
+      "detail": "跨部门、供应链和生产约束更难自动化。"
+    }
+  },
+  "interdisciplinary_new_engineering": {
+    "gaokao_2030": {
+      "headline": "新工科名词过热",
+      "detail": "专业名称不够，必须绑定硬件或行业闭环。"
+    },
+    "grad_exam_2029": {
+      "headline": "读研要进真实平台",
+      "detail": "机器人、工业软件和医疗平台更有含金量。"
+    },
+    "undergrad_pivot_2027_2028": {
+      "headline": "调用模型 Demo 贬值",
+      "detail": "只做模型调用和演示项目很快同质化。"
+    },
+    "phd_research_2031_plus": {
+      "headline": "前沿赛道波动大",
+      "detail": "具身、脑机和工业 AI 机会大但淘汰快。"
+    }
+  }
+}
